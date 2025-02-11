@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header ">
+            <div class="container" style="max-height: 10px;">
+                <img src="./img/macdonalds-icon-j9t.png" alt="Brand Logo">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="container  ">
+        <div class="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input placeholder="Search" type="search" class="input">
+        </div>
+    </div>
+
+    <div class="container category-list">
+        <!-- <div class="header-list">
+            <h3>Category</h3>
+            <span>see all</span>
+        </div> -->
+        <ul>
+            <li><img src="./img/hand-holding-noodles-with-chopsticks.png" style="background-color: #9d81f3;"
+                    alt=""><span>Health</span></li>
+            <li><img src="./img/food-plate-top-view.png" alt=""><span>Plate</span></li>
+            <li><img src="./img/panan.png" alt=""><span>Banans</span></li>
+            <li><img src="./img/hand-holding-noodles-with-chopsticks.png" alt=""><span>Noodles</span></li>
+            <li><img src="./img/hand-holding-noodles-with-chopsticks.png" alt=""><span>Health</span></li>
+            <li><img src="./img/food-plate-top-view.png" alt=""><span>Plate</span></li>
+            <li><img src="./img/panan.png" alt=""><span>Banans</span></li>
+            <li><img src="./img/hand-holding-noodles-with-chopsticks.png" alt=""><span>Noodles</span></li>
+
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class=" slider-box">
+
+            <img src="./img/offer barrger.jpeg" alt="">
+            <img src="./img/offer 2.jpeg" alt="">
+            <img src="./img/offer barrger.jpeg" alt="">
+        </div>
+    </div>
+
+    <section class="container product-grid">
+        <h3 class="title">
+            <span class="before"></span> <i class="fa-solid fa-fish"></i> Burger <span class="after"></span>
+        </h3>
+        <div class="cards">
+            <div onclick="showCustomModal()" class="product-card">
+                <img src="./img/fast-food-burger-3.png" alt="">
+                <span>Beef Burger</span>
+                <div class="footer">
+                    <span>$20</span>
+                    <i onclick="showCustomModal()" class="fa-solid fa-cart-plus"></i>
+                </div>
+            </div>
+            <div onclick="showCustomModal()" class="product-card">
+                <img src="./img/food-plate-top-view.png" alt="">
+                <span>Food Plate</span>
+                <div class="footer">
+                    <span>$15</span>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+            </div>
+            <div onclick="showCustomModal()" class="product-card">
+                <img src="./img/fast-food-burger-3.png" alt="">
+                <span>Chicken Burger</span>
+                <div class="footer">
+                    <span>$18</span>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+            </div>
+            <div onclick="showCustomModal()" class="product-card">
+                <img src="./img/hand-holding-noodles-with-chopsticks.png" alt="">
+                <span>Noodles</span>
+                <div class="footer">
+                    <span>$12</span>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+
+            </div>
+            <div onclick="showCustomModal()" class="product-card">
+                <img src="./img/fast-food-burger-3.png" alt="">
+                <span>Beef Burger</span>
+                <div class="footer">
+                    <span>$20</span>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+            </div>
+            <div onclick="showCustomModal()" class="product-card">
+                <img src="./img/food-plate-top-view.png" alt="">
+                <span>Food Plate</span>
+                <div class="footer">
+                    <span>$15</span>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+            </div>
+            <div onclick="showCustomModal()" class="product-card">
+                <img src="./img/fast-food-burger-3.png" alt="">
+                <span>Chicken Burger</span>
+                <div class="footer">
+                    <span>$18</span>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+            </div>
+            <div onclick="showCustomModal()" class="product-card">
+                <img src="./img/hand-holding-noodles-with-chopsticks.png" alt="">
+                <span>Noodles</span>
+                <div class="footer">
+                    <span>$12</span>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="container product-grid">
+            <h3 class="title">
+                <span class="before"></span> <i class="fa-solid fa-fish"></i> Fish <span class="after"></span>
+            </h3>
+            <div class="cards">
+                <div onclick="showCustomModal()" class="product-card">
+                    <img src="./img/—Pngtree—rohu carp fish png_6940208.png" alt="">
+                    <span>Grilled Salmon</span>
+                    <div class="footer">
+                        <span>$20</span>
+                        <i id="cart-plus" class="fa-solid fa-cart-plus"></i>
+                    </div>
+                </div>
+                <div onclick="showCustomModal()" class="product-card">
+                    <img src="./img/—Pngtree—rohu carp fish png_6940208.png" alt=""><span>Tuna
+                        Steak</span>
+                    <div class="footer"><span>$25</span><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+                <div onclick="showCustomModal()" class="product-card">
+                    <img src="./img/—Pngtree—koi ornamental fish traditional spring_20301028.png" alt=""><span>Fried
+                        Tilapia</span>
+                    <div class="footer"><span>$18</span><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+                <div onclick="showCustomModal()" class="product-card">
+                    <img src="./img/—Pngtree—koi ornamental fish traditional spring_20301028.png" alt=""><span>Sushi
+                        Platter</span>
+                    <div class="footer"><span>$30</span><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container product-grid">
+            <h3 class="title">
+                <span class="before"></span> <i class="fa-solid fa-mug-hot"></i> Drinks <span class="after"></span>
+            </h3>
+            <div class="cards">
+                <div onclick="showCustomModal()" class="product-card">
+                    <img src="./img/Drink.png" alt=""><span>Orange Juice</span>
+                    <div class="footer"><span>$5</span><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+                <div onclick="showCustomModal()" class="product-card">
+                    <img src="./img/Drink.png" alt=""><span>Strawberry Smoothie</span>
+                    <div class="footer"><span>$6</span><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+                <div onclick="showCustomModal()" class="product-card">
+                    <img src="./img/Drink.png" alt=""><span>Coffee</span>
+                    <div class="footer"><span>$4</span><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+                <div onclick="showCustomModal()" class="product-card">
+                    <img src="./img/Drink.png" alt=""><span>Green Tea</span>
+                    <div class="footer"><span>$3</span><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container product-grid">
+            <h3 class="title">
+                <span class="before"></span> <i class="fa-solid fa-carrot"></i> Vegetables <span class="after"></span>
+            </h3>
+            <div class="cards">
+                <div onclick="showCustomModal()" class="product-card">
+                    <img src="./img/veg-1.png" alt=""><span>Carrots</span>
+                    <div class="footer"><span>$2</span><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+                <div onclick="showCustomModal()" class="product-card">
+                    <img src="./img/veg-2.png" alt=""><span>Broccoli</span>
+                    <div class="footer"><span>$3</span><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+                <div onclick="showCustomModal()" class="product-card">
+                    <img src="./img/veg-1.png" alt=""><span>Spinach</span>
+                    <div class="footer"><span>$2.5</span><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+                <div onclick="showCustomModal()" class="product-card">
+                    <img src="./img/veg-2.png" alt=""><span>Bell Peppers</span>
+                    <div class="footer"><span>$4</span><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+                <div onclick="showCustomModal()" class="product-card">
+                    <img src="./img/veg-1.png" alt=""><span>Cabbage</span>
+                    <div class="footer"><span>$3</span><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+                <div onclick="showCustomModal()" class="product-card">
+                    <img src="./img/veg-2.png" alt=""><span>Tomatoes</span>
+                    <div class="footer"><span>$2.2</span><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+                <div onclick="showCustomModal()" class="product-card">
+                    <img src="./img/veg-1.png" alt=""><span>Eggplant</span>
+                    <div class="footer"><span>$2.8</span><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+                <div onclick="showCustomModal()" class="product-card">
+                    <img src="./img/veg-2.png" alt=""><span>Potatoes</span>
+                    <div class="footer"><span>$1.5</span><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+                <div onclick="showCustomModal()" class="product-card">
+                    <img src="./img/veg-2.png" alt=""><span>Onions</span>
+                    <div class="footer"><span>$1.8</span><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+                <div onclick="showCustomModal()" class="product-card">
+                    <img src="./img/veg-1.png" alt=""><span>Cucumbers</span>
+                    <div class="footer"><span>$2</span><i class="fa-solid fa-cart-plus"></i></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <div class="radio-container">
+        <legend>Choose pize size</legend>
+    
+        <label class="option">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"></path>
+            </svg>
+            <span class="label-text">small</span>
+            <input class="radio-option" type="radio" name="status"  checked>
+        </label>
+    
+        <label class="option">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"></path>
+            </svg>
+            <span class="label-text">midim</span>
+            <input class="radio-option" type="radio" name="status" >
+        </label>
+    
+        <label class="option">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"></path>
+            </svg>
+            <span class="label-text">big</span>
+            <input class="radio-option" type="radio" name="status" >
+        </label>
+    </div>
+
+
+    <button onclick="toggleChecked">fjkdl</button>
+    
+
+    <div data-v-61119ad9=""
+        class="modal-footer">
+    </div>
+   
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</body>
+
+</html>
+
+
+<!-- TODO
+- when Prodect hover change make anmation
+- Do cart and Prodect daitais like in https://public-files.gumroad.com/31iza4r01luel66zffzdn8ilvjhf 
+- DO A Intersection Observer TO Make the colore of catgory list move and moveing be like instalacarte.com
+- Asp.net theme https://preview.keenthemes.com/html/metronic/docs/base/modal
+- make the checkbox toggle when clicking anywhere on the .check-item 
+
+ -->
