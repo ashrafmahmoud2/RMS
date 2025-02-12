@@ -1,17 +1,26 @@
 :root {
-    --main-color: #6535f5;
-    --main-color-alt: #1787e0;
+    --main-color:#1787e0;
     --main-transition: 0.3s;
     --main-padding: 100px;
-    --background-color: #efeeee;
+    --background-color: #f1f2f8;
+
 }
 
 /* Global Rules */
+
+body {
+    background-color: #f1f2f8;
+    font-family: "Cairo", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Cairo", sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
@@ -114,26 +123,22 @@ input[type="checkbox"] {
 
 /* Header Section */
 header {
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    border-bottom: 8px solid #9d81f3;
-
+   
+   
 }
 
 .header {
-    background-color: #9d81f3;
-    /* position: fixed;
-    width: 100%; */
-
+    background-color:#ffffff;
 }
 
 .header .container {
+    
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    background-color: #9d81f3;
+    padding: 30px 10px;
+    background-color:#ffffff;
     max-width: 1700px;
     margin: auto;
     position: sticky;
@@ -142,8 +147,11 @@ header {
 }
 
 .header .container img {
-    width: 50px;
-    padding-top: 10px;
+    width: 40px;  
+}
+
+
+.header .container  i{
 }
 
 
@@ -162,16 +170,16 @@ header {
     border: 1px solid #ccc;
     border-radius: 14px;
     font-size: 16px;
-    background-color: var(--background-color);
-    border: none;
+    background-color: #ffffff;
+    border: none; 
 }
 
 .Search i {
     position: absolute;
-    top: 7px;
-    font-size: 16px;
-    margin-left: 10px;
-    color: #797878;
+    top: 12px;
+    font-size: 20px;
+    margin-left: 8px;
+    color:  var(--background-color);   
 }
 
 /* Category List */
@@ -198,7 +206,7 @@ header {
 }
 
 .category-list ul {
-    background-color: white;
+    background-color: #f1f2f8;
 }
 
 .category-list ul {
@@ -209,19 +217,21 @@ header {
 }
 
 .category-list ul li {
+    
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-right: 10px;
+    background-color:var(--background-color);    
 }
 
 .category-list img {
     height: 100%;
     width: 100%;
-    background-color: #efeeee;
+    background-color: #ffffff;
     padding: 10px;
-    border-radius: 9px;
+    border-radius: 15px;
     min-width: 70px;
     min-height: 70px;
     margin-bottom: 10px;
@@ -242,7 +252,7 @@ header {
     min-width: 95%;
     min-height: 190px;
     margin-right: 10px;
-    border-radius: 9px;
+    border-radius: 22px;
 }
 
 @media (min-width: 1200px) {
@@ -255,19 +265,19 @@ header {
 /* Product Grid */
 .product-grid .title {
     margin-top: 40px;
-    color: #9d81f3;
+    color:var(--main-color);
     font-size: 30px;
     font-weight: bold;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;/*to make the line make it center */
     width: 100%;
     text-transform: capitalize;
     gap: 10px;
 }
 
 .product-grid .category-title .title {
-    color: #9d81f3;
+    color:var(--main-color);
     font-size: 30px;
     background-color: white;
     width: fit-content;
@@ -277,14 +287,14 @@ header {
 .product-grid .title .before {
     content: "";
     width: 10%;
-    height: 3px;
+    height: 2px;
     background-color: black;
 }
 
 .product-grid .title .after {
     content: "";
     width: 80%;
-    height: 3px;
+    height: 2px;
     background-color: black;
 }
 
@@ -296,7 +306,7 @@ header {
 }
 
 .product-card {
-    background-color: #efeeee;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -306,8 +316,12 @@ header {
 }
 
 .product-card:hover {
-    background-color: #c9b9f865;
+    background-color: #d7daf570;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow on hover */
+    border-color: #5f85ec; /* Optional: Change border color */
+    transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
+
 
 .product-card img {
     width: 100px;
@@ -332,7 +346,7 @@ header {
 }
 
 .product-card .footer i {
-    color: green;
+    color: var(--main-color);
     padding-top: 5px;
 }
 
@@ -341,12 +355,12 @@ header {
 /* Modal Styles */
 
 .swal2-popup.custom-modal {
-     height: 90vh;
+    height: 90vh;
     overflow-y: auto;
     position: relative;
     padding: 0;
     margin: 0;
-  }
+}
 
 
 
@@ -473,7 +487,7 @@ header {
 
 
 .modal-footer {
-    position: sticky; 
+    position: sticky;
     bottom: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -548,13 +562,3 @@ header {
 .add-to-cart:hover {
     background: #218838;
 }
-
-
-
-
-
-
-   
-    
- 
-
