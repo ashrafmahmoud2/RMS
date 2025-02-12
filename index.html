@@ -236,103 +236,18 @@
 
     </section>
 
-
-
-    <div class="check-items">
-  <div class="check-items-header">
-    <h4><i class="fa-solid fa-utensils"></i> Additional Ingredients</h4>
-    <span class="badge" style="background-color: black; color: white">Required</span>
-  </div>
-  <div class="ingredients-list">
-    <div class="check-item">
-      <h3><img src="./img/onion.png" alt="Onion"> Onions</h3>
-      <div><span>5 EGP</span> <input class="custom-checkbox" type="checkbox"></div>
-    </div>
-    <div class="check-item">
-      <h3><img src="./img/tomato.png" alt="Tomato"> Tomato</h3>
-      <div><span>5 EGP</span> <input class="custom-checkbox" type="checkbox"></div>
-    </div>
-    <div class="check-item">
-      <h3><img src="./img/chilli.png" alt="Chilli"> Chilli</h3>
-      <div><span>5 EGP</span> <input class="custom-checkbox" type="checkbox"></div>
-    </div>
-    <div class="check-item">
-      <h3><img src="./img/salad.png" alt="Salad"> Salad</h3>
-      <div><span>5 EGP</span> <input class="custom-checkbox" type="checkbox"></div>
-    </div>
-  </div>
-</div>
-
-<script>
-  const checkItems = document.querySelectorAll('.check-item');
-
-  checkItems.forEach(item => {
-    item.addEventListener('click', () => {
-      item.classList.toggle('selected'); // Toggle the 'selected' class
-    });
-  });
-</script>
-
-
-  
-
-    <div class="check-items">
-        <div  class="check-items-header d-flex-between">
-            <h4><i class="fa-solid fa-utensils" aria-hidden="true"></i> Additional Ingredients</h4>
-            <span class="badge" style="background-color: black; color: white">Required</span>
-        </div>
-        <div class="ingredients-list">
-            <div class="check-item d-flex-between">
-                <h3><img src="./img/onion.png" alt="Onion"> Onions</h3>
-                <div><span>5 EGP</span> <input class="custom-checkbox" type="checkbox"></div>
-            </div>
-            <div class="check-item d-flex-between">
-                <h3><img src="./img/tomato.png" alt="Tomato"> Tomato</h3>
-                <div><span>5 EGP</span> <input class="custom-checkbox" type="checkbox"></div>
-            </div>
-            <div class="check-item d-flex-between">
-                <h3><img src="./img/chilli.png" alt="Chilli"> Chilli</h3>
-                <div><span>5 EGP</span> <input class="custom-checkbox" type="checkbox"></div>
-            </div>
-            <div class="check-item d-flex-between">
-                <h3><img src="./img/salad.png" alt="Salad"> Salad</h3>
-                <div><span>5 EGP</span> <input class="custom-checkbox" type="checkbox"></div>
-            </div>
-        </div>
-    </div>
-    
-        
-      <div class="radio-container">
-            <div onclick="toggleChecked(this)" class="check-items-header d-flex-between">
-                <h4><i class="fa-solid fa-utensils" aria-hidden="true"></i> Choose prize size</h4>
-                <span class="badge" style="background-color: black; color: white">Required</span>
-            </div>
-        
-            <label class="option d-flex-between">
-                <input class="radio-option" type="radio" name="status" checked>
-                <h3><img style="width: 20px;" src="./img/salad.png"> Small</h3>
-                <span>5 EGP</span>
-            </label>
-        
-            <label class="option d-flex-between">
-                <input class="radio-option" type="radio" name="status">
-                <h3><img style="width: 20px;" src="./img/salad.png"> Medium</h3>
-                <span>10 EGP</span>
-            </label>
-        
-            <label class="option d-flex-between">
-                <input class="radio-option" type="radio" name="status">
-                <h3><img style="width: 20px;" src="./img/salad.png"> Large</h3>
-                <span>15 EGP</span>
-            </label>
-        </div>
-    
+    <details>
+        <summary>Read More</summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum reiciendis labore tempore soluta, fugiat possimus.</p>
+    </details>
     
 
 
-    
 
-    
+
+
+
+
 
 
 
@@ -358,5 +273,5 @@
 - Do cart and Prodect daitais like in https://public-files.gumroad.com/31iza4r01luel66zffzdn8ilvjhf 
 - DO A Intersection Observer TO Make the colore of catgory list move and moveing be like instalacarte.com
 - Asp.net theme https://preview.keenthemes.com/html/metronic/docs/base/modal
-- make the checkbox toggle when clicking anywhere on the .check-item 
+- make the checkbox toggle when clicking anywhere on the .addition-item 
  -->
