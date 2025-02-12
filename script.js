@@ -16,7 +16,6 @@ function showCustomModal() {
     <span class="cal badge">🔥 520 cal</span>
 </div>
 
-<!-- Additional Ingredients Section -->
 <div class="check-items">
     <div onclick="toggleChecked(this)" class="check-items-header d-flex-between">
         <h4><i class="fa-solid fa-utensils" aria-hidden="true"></i> Additional Ingredients</h4>
@@ -25,22 +24,50 @@ function showCustomModal() {
     <div class="ingredients-list">
         <div class="check-item d-flex-between">
             <h3><img src="./img/onion.png" alt="Onion"> Onions</h3>
-            <div><span>5 EGP</span><input class="custom-checkbo" type="checkbox"></div>
+            <div><span>5 EGP</span> <input class="custom-checkbox" type="checkbox"></div>
         </div>
         <div class="check-item d-flex-between">
             <h3><img src="./img/tomato.png" alt="Tomato"> Tomato</h3>
-            <div><span>5 EGP</span><input class="custom-checkbo" type="checkbox"></div>
+            <div><span>5 EGP</span> <input class="custom-checkbox" type="checkbox"></div>
         </div>
         <div class="check-item d-flex-between">
             <h3><img src="./img/chilli.png" alt="Chilli"> Chilli</h3>
-            <div><span>5 EGP</span><input class="custom-checkbo" type="checkbox"></div>
+            <div><span>5 EGP</span> <input class="custom-checkbox" type="checkbox"></div>
         </div>
         <div class="check-item d-flex-between">
             <h3><img src="./img/salad.png" alt="Salad"> Salad</h3>
-            <div><span>5 EGP</span><input class="custom-checkbo" type="checkbox"></div>
+            <div><span>5 EGP</span> <input class="custom-checkbox" type="checkbox"></div>
         </div>
     </div>
 </div>
+
+    
+  <div class="radio-container">
+        <div onclick="toggleChecked(this)" class="check-items-header d-flex-between">
+            <h4><i class="fa-solid fa-utensils" aria-hidden="true"></i> Choose prize size</h4>
+            <span class="badge" style="background-color: black; color: white">Required</span>
+        </div>
+    
+        <label class="option d-flex-between">
+            <input class="radio-option" type="radio" name="status" checked>
+            <h3><img style="width: 20px;" src="./img/salad.png"> Small</h3>
+            <span>5 EGP</span>
+        </label>
+    
+        <label class="option d-flex-between">
+            <input class="radio-option" type="radio" name="status">
+            <h3><img style="width: 20px;" src="./img/salad.png"> Medium</h3>
+            <span>10 EGP</span>
+        </label>
+    
+        <label class="option d-flex-between">
+            <input class="radio-option" type="radio" name="status">
+            <h3><img style="width: 20px;" src="./img/salad.png"> Large</h3>
+            <span>15 EGP</span>
+        </label>
+    </div>
+
+
 
 <!-- Modal Footer -->
 <div class="modal-footer ">
@@ -114,5 +141,16 @@ function updateCounter(change) {
       decreaseButton.style.color = "white";
   }
 }
+
+
+document.querySelectorAll('.check-item').forEach(item => {
+    item.addEventListener('click', function () {
+        const checkbox = this.querySelector('.custom-checkboxx');
+        checkbox.checked = !checkbox.checked; // Toggle checkbox
+        this.classList.toggle('checked', checkbox.checked); // Toggle background color
+    });
+});
+
+
 
 
